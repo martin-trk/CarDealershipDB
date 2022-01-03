@@ -1,2 +1,2 @@
-CREATE SEQUENCE department_id_seq
+CREATE SEQUENCE departments_id_seq
 INCREMENT BY 1;
