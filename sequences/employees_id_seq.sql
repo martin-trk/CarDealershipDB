@@ -1,0 +1,2 @@
+CREATE SEQUENCE employees_id_seq
+INCREMENT BY 1;

@@ -1,0 +1,2 @@
+CREATE SEQUENCE department_id_seq
+INCREMENT BY 1;

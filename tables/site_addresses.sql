@@ -1,4 +1,4 @@
-CREATE TABLE site_adresses(
+CREATE TABLE site_addresses(
 	site_id NUMBER,
 	zip_code NUMBER NOT NULL,
 	city VARCHAR2(10) NOT NULL,
