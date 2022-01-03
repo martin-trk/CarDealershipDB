@@ -1,0 +1,20 @@
+CREATE TABLE employees (
+	employee_id NUMBER,
+	dealership_site_id NUMBER NOT NULL,
+	department_id NUMBER NOT NULL,
+	first_name VARCHAR2(30) NOT NULL,
+	last_name VARCHAR2(30) NOT NULL,
+	birth_date DATE NOT NULL,
+	gender VARCHAR2(5) NOT NULL,
+	hire_date DATE NOT NULL,
+	zip_code NUMBER NOT NULL,
+	city VARCHAR2(10) NOT NULL,
+	street VARCHAR2(30) NOT NULL,
+	house_number VARCHAR2(5) NOT NULL,
+	salary NUMBER NOT NULL,
+	mod_user VARCHAR2(300),
+	created_on TIMESTAMP(6),
+	last_mod TIMESTAMP(6),
+	dml_flag VARCHAR2(1),
+	version NUMBER
+);
