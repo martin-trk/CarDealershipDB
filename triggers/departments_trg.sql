@@ -4,9 +4,9 @@ CREATE OR REPLACE TRIGGER departments_trg
 BEGIN
     IF INSERTING
     THEN
-        IF :new.site_id IS NULL
+        IF :new.department_id IS NULL
         THEN
-            :new.site_id := departments_id_seq.nextval;
+            :new.department_id := departments_id_seq.nextval;
         END IF;
 
 

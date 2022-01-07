@@ -4,9 +4,9 @@ CREATE OR REPLACE TRIGGER car_manufacturers_trg
 BEGIN
     IF INSERTING
     THEN
-        IF :new.site_id IS NULL
+        IF :new.ma_id IS NULL
         THEN
-            :new.site_id := car_manufacturers_id_seq.nextval;
+            :new.ma_id := car_manufacturers_id_seq.nextval;
         END IF;
 
 

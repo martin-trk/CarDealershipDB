@@ -4,9 +4,9 @@ CREATE OR REPLACE TRIGGER employees_trg
 BEGIN
     IF INSERTING
     THEN
-        IF :new.site_id IS NULL
+        IF :new.employee_id IS NULL
         THEN
-            :new.site_id := employees_id_seq.nextval;
+            :new.employee_id := employees_id_seq.nextval;
         END IF;
 
 
