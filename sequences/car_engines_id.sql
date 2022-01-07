@@ -1,2 +1,0 @@
-CREATE SEQUENCE car_engines_id
-INCREMENT BY 1;

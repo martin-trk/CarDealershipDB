@@ -1,0 +1,2 @@
+CREATE SEQUENCE car_models_id_seq
+INCREMENT BY 1;
