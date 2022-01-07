@@ -193,5 +193,5 @@ VALUES('1.6 Sport', 1586, 136, 6, 'Benzin');
 INSERT INTO car_engines(en_name, engine_displacement, performance, gear, fuel)
 VALUES('1.2', 1242, 94, 5, 'Benzin');
 
-INSERT INTO car_engines(en_name, engine_displacement, performance, gear, fuel)
+INSERT INTO car_engines(en_name, engine_displacement, performance, gear, fue)
 VALUES('1.6 TDCI', 1596, 101, 6, 'Dízel');
