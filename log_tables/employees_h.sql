@@ -5,7 +5,7 @@ CREATE TABLE employees_h(
 	first_name VARCHAR2(30),
 	last_name VARCHAR2(30),
 	birth_date DATE,
-	gender VARCHAR2(5),
+	gender VARCHAR2(8),
 	hire_date DATE,
 	zip_code NUMBER,
 	city VARCHAR2(10),
