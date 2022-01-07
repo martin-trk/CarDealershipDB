@@ -1,12 +1,12 @@
-CREATE OR REPLACE TRIGGER dealership_sites_trg
-    BEFORE INSERT OR UPDATE ON dealership_sites
+CREATE OR REPLACE TRIGGER car_manufacturers_trg
+    BEFORE INSERT OR UPDATE ON car_manufacturers
     FOR EACH ROW
 BEGIN
     IF INSERTING
     THEN
         IF :new.site_id IS NULL
         THEN
-            :new.site_id := dealership_sites_id_seq.nextval;
+            :new.site_id := car_manufacturers_id_seq.nextval;
         END IF;
 
 
