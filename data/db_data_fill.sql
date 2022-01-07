@@ -22,19 +22,19 @@ VALUES(7761, 'Kozármisleny', 'Vadvirág utca', '4');
 INSERT INTO site_addresses(zip_code, city, street, house_number)
 VALUES(7400, 'Kaposvár', 'Iszák utca', '48');
 
-INSERT INTO departments(name, salary_min, salary_max, shift_starts_at, shift_ends_at)
+INSERT INTO departments(name, salary_min, salary_max, shift_starts_hour, shift_ends_hour)
 VALUES('Vezetőség', 750000, 1500000, '9:00', '18:00');
 
-INSERT INTO departments(name, salary_min, salary_max, shift_starts_at, shift_ends_at)
+INSERT INTO departments(name, salary_min, salary_max, shift_starts_hour, shift_ends_hour)
 VALUES('Kereskedő', 450000, 900000, '8:30', '17:00');
 
-INSERT INTO departments(name, salary_min, salary_max, shift_starts_at, shift_ends_at)
+INSERT INTO departments(name, salary_min, salary_max, shift_starts_hour, shift_ends_hour)
 VALUES('Autókozmetikus', 300000, 500000, '7:30', '16:00');
 
-INSERT INTO departments(name, salary_min, salary_max, shift_starts_at, shift_ends_at)
+INSERT INTO departments(name, salary_min, salary_max, shift_starts_hour, shift_ends_hour)
 VALUES('Szerelő', 350000, 550000, '7:00', '15:30');
 
-INSERT INTO departments(name, salary_min, salary_max, shift_starts_at, shift_ends_at)
+INSERT INTO departments(name, salary_min, salary_max, shift_starts_hour, shift_ends_hour)
 VALUES('Könyvelő', 600000, 1000000, '8:00', '17:00');
 
 INSERT INTO employees(dealership_site_id, department_id, first_name, last_name, birth_date, gender, hire_date, zip_code, city, street, house_number, salary)
