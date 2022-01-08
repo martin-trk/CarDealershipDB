@@ -2,15 +2,15 @@ CREATE OR REPLACE TRIGGER employees_h_trg
     AFTER INSERT OR UPDATE OR DELETE ON employees
     FOR EACH ROW
 DECLARE
-    v_mod_user employees.mod_user%TYPE;
-    v_mod_time employees.last_mod%TYPE;
+    v_mod_user employees_h.mod_user%TYPE;
+    v_mod_time employees_h.last_mod%TYPE;
 BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := SYSDATE;
 
     IF DELETING
     THEN
-        INSERT INTO site_addresses_h
+        INSERT INTO employees_h
             (employee_id
             ,dealership_site_id
             ,department_id
@@ -43,13 +43,12 @@ BEGIN
             ,:old.house_number
             ,v_mod_user
             ,:old.created_on
-            ,v_last_mod
+            ,v_mod_time
             ,'D'
             ,:old.version + 1);
     ELSE
-        INSERT INTO site_addresses_h
-            (
-            ,employee_id
+        INSERT INTO employees_h
+            (employee_id
             ,dealership_site_id
             ,department_id
             ,first_name
@@ -57,6 +56,7 @@ BEGIN
             ,birth_date
             ,gender
             ,hire_date
+            ,zip_code
             ,city
             ,street
             ,house_number

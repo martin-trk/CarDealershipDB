@@ -2,8 +2,8 @@ CREATE OR REPLACE TRIGGER departments_h_trg
     AFTER INSERT OR UPDATE OR DELETE ON departments
     FOR EACH ROW
 DECLARE
-    v_mod_user departments.mod_user%TYPE;
-    v_mod_time departments.last_mod%TYPE;
+    v_mod_user departments_h.mod_user%TYPE;
+    v_mod_time departments_h.last_mod%TYPE;
 BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := SYSDATE;
@@ -29,11 +29,9 @@ BEGIN
             ,:old.salary_max
             ,:old.shift_starts_hour
             ,:old.shift_ends_hour
-            ,:old.site_id
-            ,:old.name
             ,v_mod_user
             ,:old.created_on
-            ,v_last_mod
+            ,v_mod_time
             ,'D'
             ,:old.version + 1);
     ELSE

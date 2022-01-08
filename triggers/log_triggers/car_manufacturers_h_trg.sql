@@ -23,7 +23,7 @@ BEGIN
             ,:old.ma_name
             ,v_mod_user
             ,:old.created_on
-            ,v_last_mod
+            ,v_mod_time
             ,'D'
             ,:old.version + 1);
     ELSE
