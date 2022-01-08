@@ -11,7 +11,7 @@ BEGIN
     IF DELETING
     THEN
         INSERT INTO cars_h
-            (car_id
+            (id
             ,dealership_site_id
             ,engine_id
             ,model_id
@@ -27,7 +27,7 @@ BEGIN
             ,dml_flag
             ,version)
         VALUES
-            (:old.car_id
+            (:old.id
             ,:old.dealership_site_id
             ,:old.engine_id
             ,:old.model_id
@@ -44,7 +44,7 @@ BEGIN
             ,:old.version + 1);
     ELSE
         INSERT INTO cars_h
-            (car_id
+            (id
             ,dealership_site_id
             ,engine_id
             ,model_id
@@ -60,7 +60,7 @@ BEGIN
             ,dml_flag
             ,version)
         VALUES
-            (:new.car_id
+            (:new.id
             ,:new.dealership_site_id
             ,:new.engine_id
             ,:new.model_id
