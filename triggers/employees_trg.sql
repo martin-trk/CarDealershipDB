@@ -25,3 +25,4 @@ BEGIN
     :new.last_mod := SYSDATE;
     :new.mod_user := sys_context('USERNV', 'OS_USER');
 END;
+/

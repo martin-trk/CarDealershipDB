@@ -32,8 +32,8 @@ PROMPT Creating constraints...
 @./constraints/departments_const.sql
 @./constraints/employees_const.sql
 @./constraints/car_engines_const.sql
-@./constraints/car_models_const.sql
 @./constraints/car_manufacturers_const.sql
+@./constraints/car_models_const.sql
 @./constraints/cars_const.sql
 
 PROMPT Creating sequences...
@@ -51,26 +51,26 @@ PROMPT Creating sequences...
 
 --@./package/err_log_pkg.pck
 
-PROMPT Creating triggers...
-
-@./triggers/car_engines_trg.sql
-@./triggers/car_manufacturers_trg.sql
-@./triggers/car_models_trg.sql
-@./triggers/cars_trg.sql
-@./triggers/dealership_sites_trg.sql
-@./triggers/departments_trg.sql
-@./triggers/employees_trg.sql
-@./triggers/site_addresses_trg.sql
-
-@./triggers/log_triggers/car_engines_h_trg.sql
-@./triggers/log_triggers/car_manufacturers_h_trg.sql
-@./triggers/log_triggers/car_models_h_trg.sql
-@./triggers/log_triggers/cars_h_trg.sql
-@./triggers/log_triggers/dealership_sites_h_trg.sql
-@./triggers/log_triggers/departments_h_trg.sql
-@./triggers/log_triggers/employees_h_trg.sql
-@./triggers/log_triggers/site_addresses_h_trg.sql
-
-PROMPT Filling tables with data...
-
-@./data/db_data_fill.sql
+--PROMPT Creating triggers...
+--
+--@./triggers/car_engines_trg.sql
+--@./triggers/car_manufacturers_trg.sql
+--@./triggers/car_models_trg.sql
+--@./triggers/cars_trg.sql
+--@./triggers/dealership_sites_trg.sql
+--@./triggers/departments_trg.sql
+--@./triggers/employees_trg.sql
+--@./triggers/site_addresses_trg.sql
+--
+--@./triggers/log_triggers/car_engines_h_trg.sql
+--@./triggers/log_triggers/car_manufacturers_h_trg.sql
+--@./triggers/log_triggers/car_models_h_trg.sql
+--@./triggers/log_triggers/cars_h_trg.sql
+--@./triggers/log_triggers/dealership_sites_h_trg.sql
+--@./triggers/log_triggers/departments_h_trg.sql
+--@./triggers/log_triggers/employees_h_trg.sql
+--@./triggers/log_triggers/site_addresses_h_trg.sql
+--
+--PROMPT Filling tables with data...
+--
+--@./data/db_data_fill.sql
