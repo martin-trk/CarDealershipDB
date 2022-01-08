@@ -1,5 +1,5 @@
 ALTER TABLE cars
-ADD CONSTRAINT cars_pk PRIMARY KEY (car_id);
+ADD CONSTRAINT cars_pk PRIMARY KEY (id);
 ALTER TABLE cars
 ADD CONSTRAINT cars_fk0 FOREIGN KEY (dealership_site_id) REFERENCES dealership_sites(site_id);
 ALTER TABLE cars

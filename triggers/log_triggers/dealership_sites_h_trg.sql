@@ -42,6 +42,6 @@ BEGIN
             ,:new.created_on
             ,:new.last_mod
             ,:new.dml_flag
-            ,:nev.version);
+            ,:new.version);
     END IF;
 END;
