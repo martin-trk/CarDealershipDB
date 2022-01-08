@@ -8,7 +8,7 @@ CREATE TABLE employees_h(
 	gender VARCHAR2(8),
 	hire_date DATE,
 	zip_code NUMBER,
-	city VARCHAR2(10),
+	city VARCHAR2(30),
 	street VARCHAR2(30),
 	house_number VARCHAR2(5),
 	salary NUMBER,

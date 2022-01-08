@@ -140,13 +140,13 @@ INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, yea
 VALUES(3, 2, 1, 1690000, 279831, 2009, 'Világoskék', 3, 'Megkímélt');
 
 INSERT INTO car_manufacturers(ma_name)
-VALUES('Suzuki')
+VALUES('Suzuki');
 
 INSERT INTO car_manufacturers(ma_name)
-VALUES('Ford')
+VALUES('Ford');
 
 INSERT INTO car_manufacturers(ma_name)
-VALUES('Kia')
+VALUES('Kia');
 
 INSERT INTO car_models(manufacturer_id, mo_name, number_of_doors, number_of_passangers, weight)
 VALUES(2, 'Mondeo', 5, 5, 1482);
