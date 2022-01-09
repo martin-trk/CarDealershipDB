@@ -38,14 +38,14 @@ PROMPT Creating constraints...
 
 PROMPT Creating sequences...
 
+@./sequences/dealership_sites_id_seq.sql
+@./sequences/site_addresses_id_seq.sql
+@./sequences/departments_id_seq.sql
+@./sequences/employees_id_seq.sql
 @./sequences/car_engines_id_seq.sql
 @./sequences/car_manufacturers_id_seq.sql
 @./sequences/car_models_id_seq.sql
 @./sequences/cars_id_seq.sql
-@./sequences/dealership_sites_id_seq.sql
-@./sequences/departments_id_seq.sql
-@./sequences/employees_id_seq.sql
-@./sequences/site_addresses_id_seq.sql
 
 --PROMPT Creating packages...
 
