@@ -1,6 +1,6 @@
 CREATE TABLE car_engines_h(
     en_id NUMBER,
-    en_name VARCHAR2(15),
+    en_name VARCHAR2(25),
     engine_displacement NUMBER,
     performance NUMBER,
     gear NUMBER,

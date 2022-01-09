@@ -1,7 +1,6 @@
 CREATE TABLE cars_h(
     id NUMBER,
     dealership_site_id NUMBER,
-    manufacturer_id NUMBER,
     engine_id NUMBER,
     model_id NUMBER,
     price NUMBER,
