@@ -6,7 +6,7 @@ CREATE TABLE cars(
     price NUMBER NOT NULL,
     kilometers NUMBER,
     year_of_manufacture NUMBER NOT NULL,
-    color VARCHAR2(10) NOT NULL,
+    color VARCHAR2(30) NOT NULL,
     number_of_past_owners NUMBER,
     condition VARCHAR2(15) NOT NULL,
     mod_user VARCHAR2(300),
