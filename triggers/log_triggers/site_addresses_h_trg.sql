@@ -2,8 +2,8 @@ CREATE OR REPLACE TRIGGER site_addresses_h_trg
     AFTER INSERT OR UPDATE OR DELETE ON site_addresses
     FOR EACH ROW
 DECLARE
-    v_mod_user site_addresses.mod_user%TYPE;
-    v_mod_time site_addresses.last_mod%TYPE;
+    v_mod_user site_addresses_h.mod_user%TYPE;
+    v_mod_time site_addresses_h.last_mod%TYPE;
 BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := SYSDATE;

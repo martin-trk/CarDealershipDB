@@ -2,8 +2,8 @@ CREATE OR REPLACE TRIGGER car_models_h_trg
     AFTER INSERT OR UPDATE OR DELETE ON car_models
     FOR EACH ROW
 DECLARE
-    v_mod_user car_models.mod_user%TYPE;
-    v_mod_time car_models.last_mod%TYPE;
+    v_mod_user car_models_h.mod_user%TYPE;
+    v_mod_time car_models_h.last_mod%TYPE;
 BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := SYSDATE;
