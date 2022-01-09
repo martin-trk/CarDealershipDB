@@ -30,8 +30,8 @@ PROMPT Creating constraints...
 
 @./constraints/dealership_sites_const.sql
 @./constraints/site_addresses_const.sql
-@./constraints/departments_const.sql
 @./constraints/employees_const.sql
+@./constraints/departments_const.sql
 @./constraints/car_engines_const.sql
 @./constraints/car_manufacturers_const.sql
 @./constraints/car_models_const.sql
