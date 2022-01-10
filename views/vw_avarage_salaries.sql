@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW average_salaries AS
+CREATE OR REPLACE VIEW vw_average_salaries AS
 SELECT dep.name
       ,AVG(salary) average_salary
       ,dep.salary_min minimum_salary_of_department
