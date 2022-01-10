@@ -1,2 +1,3 @@
 CREATE SEQUENCE car_manufacturers_id_seq
+START WITH 3000
 INCREMENT BY 1;

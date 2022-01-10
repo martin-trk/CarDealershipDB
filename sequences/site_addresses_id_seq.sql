@@ -1,2 +1,3 @@
 CREATE SEQUENCE site_addresses_id_seq
+START WITH 100
 INCREMENT BY 1;

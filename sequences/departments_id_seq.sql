@@ -1,2 +1,3 @@
 CREATE SEQUENCE departments_id_seq
+START WITH 200
 INCREMENT BY 1;
