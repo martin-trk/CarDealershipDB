@@ -58,16 +58,16 @@ PROMPT Creating views...
 @./views/vw_emps_in_all_dships.sql
 @./views/vw_condition_and_mfact.sql
 
-PROMPT Creating functions...
-
-@./functions/fn_car_datas_groupped.sql
-@./functions/fn_employees_by_deps.sql
-
 PROMPT Creating packages...
 
 @./package/err_log_pkg.pck
 @./package/car_management_pkg.pck
 @./package/employee_management_pkg.pck
+
+PROMPT Creating functions...
+
+@./functions/fn_car_datas_groupped.sql
+@./functions/fn_employees_by_deps.sql
 
 PROMPT Creating triggers...
 
