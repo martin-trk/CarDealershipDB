@@ -25,18 +25,6 @@ PROMPT Creating history tables...
 @./log_tables/site_addresses_h.sql
 @./log_tables/error_log.sql
 
-
-PROMPT Creating constraints...
-
-@./constraints/dealership_sites_const.sql
-@./constraints/site_addresses_const.sql
-@./constraints/employees_const.sql
-@./constraints/departments_const.sql
-@./constraints/car_engines_const.sql
-@./constraints/car_manufacturers_const.sql
-@./constraints/car_models_const.sql
-@./constraints/cars_const.sql
-
 PROMPT Creating sequences...
 
 @./sequences/dealership_sites_id_seq.sql
@@ -49,9 +37,37 @@ PROMPT Creating sequences...
 @./sequences/cars_id_seq.sql
 @./sequences/error_log_seq.sql
 
+PROMPT Creating types...
+
+@./types/ty_car_models.sql
+@./types/ty_employees.sql
+
+PROMPT Creating procedures...
+
+@./procedures/add_car_engines.sql
+@./procedures/add_car_manufacturers.sql
+@./procedures/add_car_models.sql
+@./procedures/add_dealership_sites.sql
+@./procedures/add_departments.sql
+@./procedures/add_site_addresses.sql
+
+PROMPT Creating views...
+
+@./views/vw_available_cars.sql
+@./views/vw_avarage_salaries.sql
+@./views/vw_employees_in_all_dealerships.sql
+@./views/vw_groupped_by_cond_and_manuf.sql
+
+PROMPT Creating functions...
+
+@./functions/fn_car_datas_groupped.sql
+@./functions/fn_employees_by_deps.sql
+
 PROMPT Creating packages...
 
 @./package/err_log_pkg.pck
+@./package/car_management_pkg.pck
+@./package/employee_management_pkg.pck
 
 PROMPT Creating triggers...
 
@@ -72,6 +88,17 @@ PROMPT Creating triggers...
 @./triggers/log_triggers/departments_h_trg.sql
 @./triggers/log_triggers/employees_h_trg.sql
 @./triggers/log_triggers/site_addresses_h_trg.sql
+
+PROMPT Creating constraints...
+
+@./constraints/dealership_sites_const.sql
+@./constraints/site_addresses_const.sql
+@./constraints/employees_const.sql
+@./constraints/departments_const.sql
+@./constraints/car_engines_const.sql
+@./constraints/car_manufacturers_const.sql
+@./constraints/car_models_const.sql
+@./constraints/cars_const.sql
 
 PROMPT Filling tables with data...
 
