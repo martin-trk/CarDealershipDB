@@ -55,8 +55,8 @@ PROMPT Creating views...
 
 @./views/vw_available_cars.sql
 @./views/vw_avarage_salaries.sql
-@./views/vw_employees_in_all_dealerships.sql
-@./views/vw_groupped_by_cond_and_manuf.sql
+@./views/vw_emps_in_all_dships.sql
+@./views/vw_condition_and_mfact.sql
 
 PROMPT Creating functions...
 
@@ -93,8 +93,8 @@ PROMPT Creating constraints...
 
 @./constraints/dealership_sites_const.sql
 @./constraints/site_addresses_const.sql
-@./constraints/employees_const.sql
 @./constraints/departments_const.sql
+@./constraints/employees_const.sql
 @./constraints/car_engines_const.sql
 @./constraints/car_manufacturers_const.sql
 @./constraints/car_models_const.sql
