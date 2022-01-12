@@ -155,45 +155,45 @@ INSERT INTO car_engines(en_name, engine_displacement, performance, gear, fuel)
 VALUES('1.6 TDCI', 1596, 101, 6, 'Dízel');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(1, 1, 1, 1749000, 309196, 2008, 'Fekete', 4, 'Megkímélt');
+VALUES(1, 2000, 4000, 1749000, 309196, 2008, 'Fekete', 4, 'Megkímélt');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(1, 3, 2, 3799999, 160000, 2012, 'Barna', 2, 'Kitűnő');
+VALUES(1, 2002, 4001, 3799999, 160000, 2012, 'Barna', 2, 'Kitűnő');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(2, 4, 3, 1340000, 121000, 2008, 'Zöld', 3, 'Normál');
+VALUES(2, 2003, 4002, 1340000, 121000, 2008, 'Zöld', 3, 'Normál');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(3, 5, 4, 5190000, 3397, 2021, 'Piros', 1, 'Újszerű');
+VALUES(3, 2004, 4003, 5190000, 3397, 2021, 'Piros', 1, 'Újszerű');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(3, 6, 5, 3647000, 102356, 2016, 'Fehér', 2, 'Megkímélt');
+VALUES(3, 2005, 4004, 3647000, 102356, 2016, 'Fehér', 2, 'Megkímélt');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(1, 7, 6, 1599000, 200662, 2012, 'Szürke', 2, 'Normál');
+VALUES(1, 2006, 4005, 1599000, 200662, 2012, 'Szürke', 2, 'Normál');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(3, 8, 6, 1799000, 210000, 2012, 'Fehér', 3, 'Normál');
+VALUES(3, 2007, 4005, 1799000, 210000, 2012, 'Fehér', 3, 'Normál');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(2, 5, 4, 4699000, 525, 2021, 'Piros', 0, 'Új');
+VALUES(2, 2004, 4003, 4699000, 525, 2021, 'Piros', 0, 'Új');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(4, 1, 1, 3600000, 248000, 2015, 'Kék', 1, 'Újszerű');
+VALUES(4, 2000, 4000, 3600000, 248000, 2015, 'Kék', 1, 'Újszerű');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(4, 6, 5, 2628000, 125000, 2011, 'Piros', 3, 'Megkímélt');
+VALUES(4, 2005, 4004, 2628000, 125000, 2011, 'Piros', 3, 'Megkímélt');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(4, 8, 6, 1300000, 180000, 2014, 'Kék', 5, 'Normál');
+VALUES(4, 2007, 4005, 1300000, 180000, 2014, 'Kék', 5, 'Normál');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(3, 9, 7, 1845000, 207000, 2010, 'Kék', 2, 'Újszerű');
+VALUES(3, 2008, 4006, 1845000, 207000, 2010, 'Kék', 2, 'Újszerű');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(1, 3, 2, 3589000, 88150, 2015, 'Barna', 1, 'Kitűnő');
+VALUES(1, 2002, 4001, 3589000, 88150, 2015, 'Barna', 1, 'Kitűnő');
 
 INSERT INTO cars(dealership_site_id, model_id, engine_id, price, kilometers, year_of_manufacture, color, number_of_past_owners, condition)
-VALUES(3, 2, 1, 1690000, 279831, 2009, 'Világoskék', 3, 'Megkímélt');
+VALUES(3, 2001, 4000, 1690000, 279831, 2009, 'Világoskék', 3, 'Megkímélt');
 
 COMMIT;
