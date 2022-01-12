@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW vw_employees_in_all_dealerships AS
+CREATE OR REPLACE VIEW vw_emps_in_all_dships AS
 SELECT emp.first_name || ' ' || emp.last_name full_name
       ,dep.name department_name
       ,ds.name dealership_name

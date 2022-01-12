@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW vw_grouped_by_cond_and_manuf AS
+CREATE OR REPLACE VIEW vw_condition_and_mfact AS
 SELECT COUNT(id) number_of_cars
       ,c.condition
       ,cma.ma_name
