@@ -2,7 +2,7 @@ declare
   cursor cur is
     select 'alter system kill session ''' || sid || ',' || serial# || '''' as command
       from v$session
-     where username = 'db_admin';
+     where username = 'DB_ADMIN';
 begin
   for c in cur loop
     EXECUTE IMMEDIATE c.command;
@@ -13,7 +13,7 @@ end;
 DECLARE
   v_count NUMBER;
 BEGIN
-  SELECT COUNT(*) INTO v_count FROM dba_users t WHERE t.username='db_admin';
+  SELECT COUNT(*) INTO v_count FROM dba_users t WHERE t.username='DB_ADMIN';
   IF v_count = 1 THEN 
     EXECUTE IMMEDIATE 'DROP USER db_admin CASCADE';
   END IF;
