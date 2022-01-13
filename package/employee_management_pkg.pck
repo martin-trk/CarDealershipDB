@@ -27,7 +27,7 @@ CREATE OR REPLACE PACKAGE employee_management_pkg IS
                         ,p_city               VARCHAR2
                         ,p_street             VARCHAR2
                         ,p_house_number       NUMBER
-                        ,p_salary             NUMBER)
+                        ,p_salary             NUMBER);
 
 
 END;
