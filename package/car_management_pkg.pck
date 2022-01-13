@@ -10,7 +10,7 @@ CREATE OR REPLACE PACKAGE car_management_pkg IS
                     ,p_number_of_past_owners NUMBER
                     ,p_condition             VARCHAR2);
 
-  PROCEDURE del_car(p_car_id NUMBER);
+  PROCEDURE del_cars(p_car_id NUMBER);
 
   PROCEDURE mod_cars(p_car_id                NUMBER
                     ,p_dealership_site_id    NUMBER
@@ -61,7 +61,7 @@ CREATE OR REPLACE PACKAGE BODY car_management_pkg IS
       ,p_condition);
   END;
 
-  PROCEDURE del_car(p_car_id NUMBER) IS
+  PROCEDURE del_cars(p_car_id NUMBER) IS
   BEGIN
     DELETE FROM cars c WHERE c.id = p_car_id;
   END;

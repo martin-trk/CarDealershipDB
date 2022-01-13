@@ -13,9 +13,9 @@ CREATE OR REPLACE PACKAGE employee_management_pkg IS
                          ,p_house_number       NUMBER
                          ,p_salary             NUMBER);
 
-  PROCEDURE del_employee(p_employee_id NUMBER);
+  PROCEDURE del_employees(p_employee_id NUMBER);
 
-  PROCEDURE mod_employee(p_employee_id        NUMBER
+  PROCEDURE mod_employees(p_employee_id        NUMBER
                         ,p_dealership_site_id NUMBER
                         ,p_department_id      NUMBER
                         ,p_first_name         VARCHAR2
@@ -75,7 +75,7 @@ CREATE OR REPLACE PACKAGE BODY employee_management_pkg IS
       ,p_salary);
   END;
 
-  PROCEDURE del_employee(p_employee_id NUMBER) IS
+  PROCEDURE del_employees(p_employee_id NUMBER) IS
   BEGIN
     DELETE FROM employees e WHERE e.employee_id = p_employee_id;
   END;
