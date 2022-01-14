@@ -51,13 +51,6 @@ PROMPT Creating procedures...
 @./procedures/add_departments.sql
 @./procedures/add_site_addresses.sql
 
-PROMPT Creating views...
-
-@./views/vw_available_cars.sql
-@./views/vw_avarage_salaries.sql
-@./views/vw_emps_in_all_dships.sql
-@./views/vw_condition_and_mfact.sql
-
 PROMPT Creating packages...
 
 @./package/err_log_pkg.pck
@@ -103,3 +96,10 @@ PROMPT Creating constraints...
 PROMPT Filling tables with data...
 
 @./data/db_data_fill.sql
+
+PROMPT Creating views...
+
+@./views/vw_available_cars.sql
+@./views/vw_avarage_salaries.sql
+@./views/vw_emps_in_all_dships.sql
+@./views/vw_condition_and_mfact.sql
